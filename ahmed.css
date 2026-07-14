@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#ffe6ec,#fff5f7,#ffe0f0);
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+
+    text-align:center;
+    padding:45px 20px;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+header h1{
+
+    font-size:42px;
+    color:#d63384;
+    margin-bottom:10px;
+}
+
+header p{
+
+    font-size:18px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+/* HOME BUTTON */
+
+.home-btn{
+
+    display:inline-block;
+    text-decoration:none;
+
+    background:#ff4d88;
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+    font-weight:bold;
+}
+
+.home-btn:hover{
+
+    background:#d81b60;
+
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:60px auto;
+}
+
+section h2{
+
+    text-align:center;
+
+    color:#d63384;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#666;
+}
+
+/* GALLERY */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* IMAGE */
+
+.card img{
+
+    width:100%;
+    height:360px;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.card:hover img{
+
+    transform:scale(1.12);
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:60px;
+
+    background:#d63384;
+
+    color:white;
+
+    font-size:18px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:30px;
+}
+
+section h2{
+
+    font-size:26px;
+}
+
+.card img{
+
+    height:280px;
+}
+
+}

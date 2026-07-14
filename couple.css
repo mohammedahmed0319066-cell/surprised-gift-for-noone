@@ -1,0 +1,275 @@
+/*=====================================
+RESET
+=====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#ff6b9a,#ff8db8,#ffd4e5);
+
+    min-height:100vh;
+
+    color:white;
+
+}
+
+/*=====================================
+HEADER
+=====================================*/
+
+header{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.15);
+
+}
+
+header h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+    text-shadow:0 8px 18px rgba(0,0,0,.3);
+
+}
+
+header p{
+
+    font-size:22px;
+
+    opacity:.95;
+
+}
+
+/*=====================================
+HOME BUTTON
+=====================================*/
+
+.home-btn{
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    background:#ff2d75;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.home-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#d81b60;
+
+}
+
+/*=====================================
+SECTIONS
+=====================================*/
+
+section{
+
+    width:92%;
+
+    max-width:1450px;
+
+    margin:70px auto;
+
+}
+
+section h2{
+
+    font-size:40px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+section h3{
+
+    text-align:center;
+
+    color:#fff7b0;
+
+    font-size:24px;
+
+    margin-bottom:35px;
+
+}
+
+/*=====================================
+GALLERY
+=====================================*/
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/*=====================================
+CARD
+=====================================*/
+
+.card{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.25);
+
+    transition:.45s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+
+}
+
+/*=====================================
+IMAGE
+=====================================*/
+
+.card img{
+
+    width:100%;
+
+    height:360px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/*=====================================
+SCROLLBAR
+=====================================*/
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ffd9ea;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff2d75;
+
+    border-radius:20px;
+
+}
+
+/*=====================================
+RESPONSIVE
+=====================================*/
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:38px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+section h2{
+
+    font-size:28px;
+
+}
+
+section h3{
+
+    font-size:18px;
+
+}
+
+.card img{
+
+    height:250px;
+
+}
+
+.home-btn{
+
+    padding:12px 22px;
+
+}
+
+}
